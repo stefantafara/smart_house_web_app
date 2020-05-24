@@ -1,0 +1,7 @@
+*.sqlite3
+*.exe
+*.bak
+*.dat
+*.dir
+*.log
+*.pid
