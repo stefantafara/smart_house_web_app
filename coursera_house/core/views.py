@@ -48,20 +48,3 @@ class ControllerView(FormView):
         bathroom_light.save()
         print('Saved to database.')
         return super(ControllerView, self).form_valid(form)
-'''
-    def post(self, request):
-        # import pdb; pdb.set_trace()
-        print('trying to save to database...')
-        # getting objects from databases
-        bedroom_target_temperature = Setting.objects.filter(controller_name='bedroom_target_temperature')[0]
-        hot_water_target_temperature = Setting.objects.filter(controller_name='hot_water_target_temperature')[0]
-        bedroom_light = Setting.objects.filter(controller_name='bedroom_light')[0]
-        bathroom_light = Setting.objects.filter(controller_name='bathroom_light')[0]
-        # saving to database
-        bedroom_target_temperature.value = int(request.POST['bedroom_target_temperature'])
-        hot_water_target_temperature.value = int(request.POST['hot_water_target_temperature'])
-        bedroom_light.value = int(request.POST['bedroom_light'])
-        bathroom_light.value = int(request.POST['bathroom_light'])
-        int(request.POST['bedroom_target_temperature'])
-        # return render(request, template_name)
-        return self.form_valid()'''

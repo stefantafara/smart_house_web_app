@@ -1,6 +1,25 @@
 GET https://smarthome.webpython.graders.eldf.ru/api/auth.current -H 'Authorization: Bearer dbac9fcdb2b43d5d9465e705b313ac5d1610057e10fd6a9de515249106ed37c5
 curl get https://smarthome.webpython.graders.eldf.ru/api/user.controller -H 'Authorization: Bearer dbac9fcdb2b43d5d9465e705b313ac5d1610057e10fd6a9de515249106ed37c5'
 
+curl -X POST \
+https://smarthome.webpython.graders.eldf.ru/api/user.controller \
+-H 'Authorization: Bearer dbac9fcdb2b43d5d9465e705b313ac5d1610057e10fd6a9de515249106ed37c5' \
+-d '{
+  "controllers": [
+    {
+      "name": "air_conditioner",
+      "value": true
+    },
+    {
+      "name": "bedroom_light",
+      "value": false
+    }
+  ]
+}'
+curl -X POST \
+https://smarthome.webpython.graders.eldf.ru/api/user.controller \
+-H 'Authorization: Bearer dbac9fcdb2b43d5d9465e705b313ac5d1610057e10fd6a9de515249106ed37c5' \
+-d '{'controllers': [{"name": "air_conditioner", "value": "true"}, {"name": "bedroom_light", "value": "false"}]}'
 #######################################
           TAB 1 - DJANGO
 #######################################
