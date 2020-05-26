@@ -123,8 +123,7 @@ SMART_HOME_ACCESS_TOKEN = os.getenv('SMART_HOME_ACCESS_TOKEN')
 SMART_HOME_API_URL = os.getenv('SMART_HOME_API_URL', 'https://smarthome.webpython.graders.eldf.ru/api/user.controller')
 EMAIL_HOST = os.getenv('EMAIL_HOST', 'EMAIL_HOST')
 EMAIL_PORT = os.getenv('EMAIL_PORT', 'EMAIL_PORT')
-# EMAIL_RECEPIENT  = os.getenv('EMAIL_RECEPIENT', 'EMAIL_RECEPIENT')
-EMAIL_RECEPIENT = 'tafara.stefan@gmail.com'
+EMAIL_RECEPIENT  = os.getenv('EMAIL_RECEPIENT', 'tafara.stefan@gmail.com')
 
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
 CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
